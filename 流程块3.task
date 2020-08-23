@@ -1,0 +1,22 @@
+dim 当前日期
+dim 当前时间
+dim 执行时间
+dim 时间差
+dim 已执行日期
+
+Do While true
+
+    当前日期= Time.Date()
+    当前时间= Time.Time()
+    执行时间= Time.TimeSerial(20, 46, 30)
+    时间差  = Time.DateDiff("s",执行时间,当前时间)
+
+    If 时间差 >=0 and 已执行日期 <> 当前日期
+        #icon("@res:ft4t6qvp-jbnh-nb37-a5qf-s6rrsh8e1ghp.png")
+        Mouse.Action({"wnd":[{"app":"explorer","cls":"Shell_TrayWnd"},{"cls":"Start","title":"开始","aaname":"开始"}]},"left","click",10000,{"bContinueOnError":false,"iDelayAfter":2000,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate"})
+        #icon("@res:ft4t6qvp-jbnh-nb37-a5qf-s6rrsh8e1ghp.png")
+        Mouse.Action({"wnd":[{"app":"explorer","cls":"Shell_TrayWnd"},{"cls":"Start","title":"开始","aaname":"开始"}]},"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate"})
+        已执行日期 = Time.Date()
+    End If
+Loop
+

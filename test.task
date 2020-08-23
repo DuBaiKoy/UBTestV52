@@ -1,0 +1,13 @@
+dim arrayRet = ""
+dim objMail = ""
+dim objRect = ""
+dim arrSelItem = ""
+dim bRet = ""
+
+// objMail = Mail.Connect("pop.qq.com", "1286800997@qq.com", "nlfdoeeikscfggib", "POP3", 995, true)
+// arrayRet = Mail.GetMailList(objMail, 3)
+
+// TracePrint arrayret
+
+
+

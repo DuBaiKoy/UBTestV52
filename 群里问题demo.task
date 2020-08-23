@@ -1,0 +1,33 @@
+// //demo1
+// objExcelWorkBook = Excel.OpenExcel("C:\\Users\\user\\Desktop\\111.xlsx",true)
+// rownum = Excel.GetRowsCount(objExcelWorkBook,"Sheet1")
+// ary = Excel.ReadRange(objExcelWorkBook,"Sheet1","A1:E"&rownum)
+// TracePrint ary
+// Excel.CloseExcel(objExcelWorkBook)
+
+// 新表 = [[]]
+// For i=0 To rownum-1
+//     新表[i] = [原表[i][0],原表[i][3],原表[i][4]]
+// Next
+// 新表[6] = [原表[1][0],原表[2][3],原表[3][4]]
+// TracePrint 新表
+
+
+// //demo2
+// objExcelWorkBook = Excel.OpenExcel("C:\\Users\\user\\Desktop\\11.xlsx",true,"Excel","","")
+// dim rownum =Excel.GetRowsCount(objExcelWorkBook,"Sheet1")
+// Dim 新数据 = [[]]
+// 数据 = Excel.ReadRange(objExcelWorkBook,"Sheet1","A2:C"&CStr(rownum))
+// For x=0 To 3
+//     分数 = 0
+//     For i=0 To UBound(数据)
+//         If 数据[i][0] = cstr(x)
+//             名字 = 数据[i][1]
+//             分数 = 分数 + cint(数据[i][2])
+//         End If   
+//     Next
+//     新数据[x] = [名字,分数] 
+// Next
+// TracePrint 新数据
+
+

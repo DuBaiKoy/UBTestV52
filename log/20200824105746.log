@@ -1,0 +1,7 @@
+[2020/8/24 10:57:46][INFO][][0] 工作路径已切换到 E:\UiBot WorkSpace\Projects\Test_V52\
+[2020/8/24 10:57:46][INFO][test.task][0] 流程 test.task 开始运行
+[2020/8/24 10:57:57][ERROR][库1.lib][9] 运行发生错误，流程中止
+错误信息如下：
+库1.lib 第9行：模块 Mouse.MouseAuto.Action 调用出错：调用的目标发生了异常。
+Exception in Mouse.Action,元素未找到
+[2020/8/24 10:57:57][INFO][test.task][0] test.task 运行已结束

@@ -1,0 +1,11 @@
+/*
+编写库：可添加多个Function的子程序，每个子程序内编写的流程可作为单独的命令重复使用到流程。
+发布库：编写完子程序后，通过"发布库"填写命令配置信息，将命令库打包到指定目录。
+使用库：在流程项目内，通过命令中心>自定义命令库目录导入安装后，在命令面板的扩展命令目录下使用。
+*/
+
+Function 点击(目标,横偏移,纵偏移)
+    #icon("@res:default.png")
+    Mouse.Action(目标,"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":cint(横偏移),"iCursorOffsetY":cint(纵偏移),"sKeyModifiers":[],"sSimulate":"simulate"})
+    End Function
+

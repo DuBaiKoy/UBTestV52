@@ -1,0 +1,1 @@
+{"Description":"天气通","GETWEATHERINFO":{"Description":"获取天气信息","TranslateTemplate":"根据城市名称，获取指定城市的天气简介和天气详情json字符串"}}

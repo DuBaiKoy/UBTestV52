@@ -7,3 +7,11 @@ TracePrint objjson["weatherinfo"]["temp1"]
 TracePrint objjson["weatherinfo"]["temp2"]
 
 
+Keyboard.Press("Space", "press", ['Ctrl'],{"iDelayAfter":300,"iDelayBefore":200,"sSimulate":"simulate"})
+#icon("@res:v21mgtr1-ek2s-8eok-7kff-p4o17gi06qlf.png")
+Keyboard.InputText({"wnd":[{"app":"Wox","cls":"HwndWrapper[Wox.exe;;2b83c6b5-7989-4cd8-8053-b04187d9f9b2]","title":"Wox"}],"ctrl":[{"role":"ROLE_SYSTEM_TEXT","aid":"QueryTextBox"}]},"360",true,20,10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":500,"sKeyModifiers":[],"sSimulate":"message","bValidate":false,"bClickBeforeInput":false})
+Keyboard.Press("Enter", "press", [],{"iDelayAfter":300,"iDelayBefore":1500,"sSimulate":"simulate"})
+
+库1.点击({"wnd":[{"app":"explorer","cls":"Shell_TrayWnd"},{"cls":"Start","title":"开始","aaname":"开始"}]}, 0, 0)
+
+

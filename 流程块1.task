@@ -2,18 +2,7 @@ dim objRect = ""
 objWindow = PrintToScreen.CreateWindow({"height":97,"resolution":{"height":1080,"width":1920},"width":935,"x":532,"y":44},true)
 PrintToScreen.DrawText(objWindow,"UiBot正在运行中，请勿操作键盘和鼠标，谢谢！",40,[255,0,0])
 
-Do While true
-#icon("@res:f49ka3jq-9utf-kul5-4ipd-egoa394g1npe.png")
-bRet = UiElement.Exists({"wnd":[{"app":"Deputy","cls":"#32770","title":"UiBot"}],"ctrl":[{"role":"ROLE_SYSTEM_PUSHBUTTON","name":"关闭"}]},{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
-if bret
-    #icon("@res:nr2bjbus-3f8i-87cm-2p97-u5o5k7vk5io2.png")
-    Mouse.Action({"wnd":[{"app":"Deputy","cls":"#32770","title":"UiBot"}],"ctrl":[{"role":"ROLE_SYSTEM_PUSHBUTTON","name":"关闭"}]},"left","click",10000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"bSetForeground":true,"sCursorPosition":"Center","iCursorOffsetX":0,"iCursorOffsetY":0,"sKeyModifiers":[],"sSimulate":"simulate"})
-end if
-Loop
-
 Delay(10000000)
 PrintToScreen.CloseWindow(objWindow)
 
-sRet = CStr(varData)
-bRet = IsSpecificStr("","letter")
 
